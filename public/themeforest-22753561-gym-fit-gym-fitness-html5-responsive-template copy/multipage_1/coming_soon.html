@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Free Web tutorials">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GymFit-Coming_Soon</title>
+<link type="image/x-icon" rel="shortcut icon" href="assets/images/favicon.ico"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+<link rel="stylesheet" href="assets/css/owl.carousel.css">
+<link rel="stylesheet" href="assets/css/owl.theme.default.css">
+<link rel="stylesheet" href="assets/css/magnific-popup.css">
+</head>
+<body>
+
+<!-- Preloader -->
+<div class="wrapper">
+  <main class="content">
+    <div class="comeing_con">
+      <h1><span class="color_change">Coming</span> Soon</h1>
+      <p>Our Website Coming Soon</p>
+      <div class="counter_box">
+        <div class="col-md-3 col-sm-3 col-xs-6">
+          <div class="clock">
+            <div class="top-pane">
+              <div id="days" class="num">0</div>
+            </div>
+            <div class="bottom-pane">
+              <div class="number_line"></div>
+              <div id="days-text" class="text">Days</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-6">
+          <div class="clock">
+            <div class="top-pane">
+              <div id="hours" class="num">0</div>
+            </div>
+            <div class="bottom-pane">
+              <div class="number_line"></div>
+              <div id="hours-text" class="text">Hours</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-6">
+          <div class="clock">
+            <div class="top-pane">
+              <div id="mins" class="num">0</div>
+            </div>
+            <div class="bottom-pane">
+              <div class="number_line"></div>
+              <div id="mins-text" class="text">Minutes</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-6">
+          <div class="clock">
+            <div class="top-pane">
+              <div id="secs" class="num">0</div>
+            </div>
+            <div class="bottom-pane">
+              <div class="number_line"></div>
+              <div id="secs-text" class="text">Seconds</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="subscribe_box">
+      <h2>Subscribe Our News Letter</h2>
+      	<form class="form-subscribe" action="#">
+      <div class="input-group cooming">
+        <input type="text" class="form-control cooming_soon input-lg" placeholder="Email Address">
+        <span class="input-group-btn">
+        <button class="btn btn-success btn-lg1" type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+        </span> </div>
+    </form>
+      </div>
+      <div class="gomeing_services">
+        <div class="col-md-12">
+          <div class="social_about_icon">
+            <ul id="comeing_soon_icon">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<!-- jQuery --> 
+<script src="assets/js/jquery.min.js"></script> 
+
+<!-- Bootstrap --> 
+<script src="assets/js/bootstrap.min.js"></script> 
+
+<!-- scroll_to_top --> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+
+<!-- classes_portfolio --> 
+<script src="https://isotope.metafizzy.co/v1/jquery.isotope.min.js"></script> 
+
+<!-- carousel slider --> 
+<script src="assets/js/owl.carousel.js"></script> 
+
+<!-- blog --> 
+<script src="assets/js/jquery.magnific-popup.min.js"></script> 
+
+<!-- classes_portfolio --> 
+<script src="https://bxslider.js"></script> 
+
+<!-- classes_portfolio --> 
+<script src="assets/js/jquery.bxslider.min.js" ></script>  
+
+<!-- Global Init --> 
+<script src="assets/js/custom.js"></script>
+<script>
+/* AUTHOR LINK */
+     $('.about-me-img').hover(function(){
+            $('.authorWindowWrapper').stop().fadeIn('fast').find('p').addClass('trans');
+        }, function(){
+            $('.authorWindowWrapper').stop().fadeOut('fast').find('p').removeClass('trans');
+        });
+  
+  
+ 
+  function timeLeft(endtime){
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor( (t/1000) % 60 );
+  var minutes = Math.floor( (t/1000/60) % 60 );
+  var hours = Math.floor( (t/(1000*60*60)) % 24 );
+  var days = Math.floor( t/(1000*60*60*24) );
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+};
+
+$(document).ready(function() {
+  var today = new Date();
+  var deadline = 'January 1 ' + (today.getFullYear() + 1) + " 00:00:00";
+  if (today.getMonth() == 0 && today.getDate() == 1) {
+    deadline = 'January 1 ' + (today.getFullYear()) + " 00:00:00";
+  };
+  
+  $("#header").hover(function() {
+    $(this).toggleClass('bluelight');
+  });
+  
+  $(".clock").hover(function() {
+    $(this).toggleClass('bluelight');
+  });
+  
+  var setClock = function(newyear){
+    var timeinterval = setInterval(function(){
+      var t = timeLeft(newyear);
+      $('#days').text(t.days);
+      $('#hours').text(t.hours);
+      $('#mins').text(('0' + t.minutes).slice(-2));
+      $('#secs').text(('0' + t.seconds).slice(-2));
+      if(t.total<=0){
+        clearInterval(timeinterval);
+        var now = new Date();
+        var yearStr = now.getFullYear().toString();
+        $('#header').text("Happy New Year!!!");
+        $('#days').text(yearStr[0]);
+        $('#days-text').text("Happy");
+        $('#hours').text(yearStr[1]);
+        $('#hours-text').text("New");
+        $('#mins').text(yearStr[2]);
+        $('#mins-text').text("Year");
+        $('#secs').text(yearStr[3]);
+        $('#secs-text').text("!!!");
+        $('#info').text("Countdown starts again tomorrow!");
+      }
+    },1000);
+  };
+  
+  setClock(deadline);
+  
+});
+
+
+</script>
+</body>
+</html>

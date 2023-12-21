@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Free Web tutorials">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GymFit-Home</title>
+<link type="image/x-icon" rel="shortcut icon" href="assets/images/favicon.ico"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800,900,1200" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+<link rel="stylesheet" href="assets/css/jquery.bxslider.css">
+<link rel="stylesheet" href="assets/css/owl.carousel.css">
+<link rel="stylesheet" href="assets/css/owl.theme.default.css">
+<link rel="stylesheet" href="assets/css/progressbar.css">
+<link rel="stylesheet" href="assets/css/animate.css">
+</head>
+
+<body>
+<div class="page-wrapper"> 
+  <!-- Preloader -->
+  <div class="preloader"></div>
+  <!-- Preloader --> 
+  
+  <!-- Header Start -->
+  <header class="main-header index_header">
+    <div class="header-lower">
+      <div class="container clearfix">
+        <div class="logo pull-left"> 
+          <a href="index.html">
+            <h2 class="logo_name">
+              GYM <span class="white_text">FIT </span>
+            </h2>
+          </a> 
+        </div>
+        <div class="right-cont clearfix">
+          <nav class="main-menu">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle menu_btn" > 
+                <span class="icon-bar"></span> 
+                <span class="icon-bar"></span> 
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="navbar-collapse collapse clearfix animated" data-wow-delay="0ms" data-wow-duration="800ms">
+              <ul class="nav navbar-nav navbar-right  ml-auto" id="onenav">
+                <li class="nav-link home current">
+                  <a href="index.html" class="ToTop js-scroll-trigger">HOME</a>
+                </li>
+                <li class="nav-link">
+                  <a href="about.html" class="js-scroll-trigger">ABOUT US</a> 
+                </li>
+                <li class="nav-link">
+                  <a href="classes.html" class="js-scroll-trigger">COURSES</a>
+                </li>
+                <li class="nav-link">
+                  <a href="shedule.html" class="js-scroll-trigger">SCHEDULE</a>
+                </li>
+                <li class="nav-link">
+                  <a href="blogpage.html" class="js-scroll-trigger">BLOG</a>
+                </li>
+                <li class="nav-link">
+                  <a href="contact.html" class="js-scroll-trigger">CONTACT US</a>
+                </li>
+                <li class="search-btn" onclick="openSearch()">
+                  <a><i class="fa fa-search"></i></a>
+                </li>
+              </ul>
+              <div class="clearfix"></div>
+            </div>
+          </nav>
+        </div>
+        <div id="myOverlay" class="overlay zoomIn animated" data-wow-delay="0ms" data-wow-duration="1000ms"> 
+          <span class="closebtn" onclick="closeSearch()" title="Close Overlay"> x </span>
+          <div class="overlay-content">
+            <form>
+              <input type="text" placeholder="Enter your keywords..." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header end --> 
+  
+  <!-- /Carousel start-->
+  <div class="main-slider slide-wrapper main-banner-area">
+    <div class="banner-slide owl-carousel">
+      <div class="single-banner-slide" style="background-image: url(assets/images/slider.png);">
+        <div class="slide-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 iner_info">
+                <div class="col-md-4 col-sm-12"> </div>
+                <div class="col-md-8 col-sm-9 large_txt" data-animation="animated bounceInDown">
+                  <p> Build <br> Your Body </p>
+                </div>
+                <div class="col-lg-6 col-md-5 col-sm-12"></div>
+                <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 slider_text" data-animation="animated bounceInUp">
+                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tempor convallis suscipit. Vestibulum et metus nulla. Nunc tempus blandit tincidunt. Phasellus porta nec nisi in ullamcorper. </p>
+                  <a href="#contact" class="slider_readmore "><span>Contact Us</span> <i class="fa fa-angle-right hvr-icon" aria-hidden="true"></i></a> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="single-banner-slide" style="background-image: url(assets/images/slider.png);">
+        <div class="slide-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 iner_info">
+                <div class="col-md-4 col-sm-12"> </div>
+                <div class="col-md-8 col-sm-9 large_txt" data-animation="animated bounceInDown">
+                  <p> Build <br>
+                    Your Body </p>
+                </div>
+                <div class="col-lg-6 col-md-5 col-sm-12"></div>
+                <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 slider_text" data-animation="animated bounceInUp">
+                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tempor convallis suscipit. Vestibulum et metus nulla. Nunc tempus blandit tincidunt. Phasellus porta nec nisi in ullamcorper. </p>
+                  <a href="#contact" class="slider_readmore "><span>Contact Us</span> <i class="fa fa-angle-right hvr-icon" aria-hidden="true"></i></a> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="single-banner-slide" style="background-image: url(assets/images/slider.png)">
+        <div class="slide-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 iner_info">
+                <div class="col-md-4 col-sm-12"> </div>
+                <div class="col-md-8 col-sm-9 large_txt" data-animation="animated bounceInDown">
+                  <p> Build <br>
+                    Your Body </p>
+                </div>
+                <div class="col-lg-6 col-md-5 col-sm-12"></div>
+                <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 slider_text" data-animation="animated bounceInUp">
+                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tempor convallis suscipit. Vestibulum et metus nulla. Nunc tempus blandit tincidunt. Phasellus porta nec nisi in ullamcorper. </p>
+                  <a href="#contact" class="slider_readmore "><span>Contact Us</span> <i class="fa fa-angle-right hvr-icon" aria-hidden="true"></i></a> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Carousel end--> 
+  
+  <!-- /banner_image start-->
+  <div class="banner_img">
+    <div class="img_box"> 
+      <img src="assets/images/bannerup.png" class="img-responsive wow slideInLeft animated" data-wow-delay="300ms" data-wow-duration="1000ms" alt=""> 
+    </div>
+  </div>
+  <!-- /banner_image end--> 
+  
+  <!-- about start-->
+  <section class="home_about_sec" id="aboutus">
+    <div class="container">
+      <div class="row">
+        <div class="home_about">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ainfo_sec phone">
+            <div class="row">
+              <img src="assets/images/about.png" alt=""> 
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 aimg_sec">
+            <h2 class="title"><b> about gymfit</b></h2>
+            <p>Cras at cursus lorem, ac blandit leo. Morbi pulvinar orci dui, vitae laoreet arcu ultricies at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.tempus. </p>
+            <p>Fusce dapibus pellentesque pharetra. Phasellus turpis nibh, sagittis quis sollicitudin eget, sollicitudin eget sem. Suspendisse sodales bibendum tellus in rhoncus. Quisque non pellentesque urna, at sodales est. In metus urna, cursus sed porttitor eu, faucibus pulvinar mi.</p>
+            <a href="#" class="primary-btn"> contact us</a> </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ainfo_sec desktop">
+            <div class="row"> 
+              <img src="assets/images/about.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- about start--> 
+  
+  <!-- course start-->
+  <section class="course_sec" id="course">
+    <div class="container">
+      <div class="col-md-12">
+        <h2 class="title"><b> Our Courses</b></h2>
+        <div class="carousel">
+          <div class="owl-carousel owl-theme ss_carousel" id="slider1">
+            <div class="item">
+              <div class="courses_box">
+                <div class="courses_img"> 
+                  <img class="img-responsive" src="assets/images/courses.png" alt=""> 
+                </div>
+                <div class="courses_con">
+                  <h2>kettlebell</h2>
+                  <p>Lorem ipsum dolor sit amet dolor sit, consectetur. Morbi lobortis odiosed.</p>
+                  <a href="#" class="read_coursr">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="courses_box">
+                <div class="courses_img">
+                  <img class="img-responsive" src="assets/images/courses.png" alt=""> 
+                </div>
+                <div class="courses_con">
+                  <h2>Striking</h2>
+                  <p>Lorem ipsum dolor sit amet dolor sit, consectetur. Morbi lobortis odiosed.</p>
+                   <a href="#" class="read_coursr">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="courses_box">
+                <div class="courses_img">
+                  <img class="img-responsive" src="assets/images/courses.png" alt=""> 
+                </div>
+                <div class="courses_con">
+                  <h2>kettlebell</h2>
+                  <p>Lorem ipsum dolor sit amet dolor sit, consectetur. Morbi lobortis odiosed.</p>
+                   <a href="#" class="read_coursr">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="courses_box">
+                <div class="courses_img">
+                  <img class="img-responsive" src="assets/images/courses.png" alt="">
+                </div>
+                <div class="courses_con">
+                  <h2>Striking</h2>
+                  <p>Lorem ipsum dolor sit amet dolor sit, consectetur. Morbi lobortis odiosed.</p>
+                   <a href="#" class="read_coursr">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="courses_box">
+                <div class="courses_img">
+                  <img class="img-responsive" src="assets/images/courses.png" alt=""> 
+                </div>
+                <div class="courses_con">
+                  <h2>Striking</h2>
+                  <p>Lorem ipsum dolor sit amet dolor sit, consectetur. Morbi lobortis odiosed.</p>
+                   <a href="#" class="read_coursr">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="courses_box">
+                <div class="courses_img"> 
+                  <img class="img-responsive" src="assets/images/courses.png" alt="">
+                </div>
+                <div class="courses_con">
+                  <h2>Striking</h2>
+                  <p>Lorem ipsum dolor sit amet dolor sit, consectetur. Morbi lobortis odiosed.</p>
+                   <a href="#" class="read_coursr">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- course end--> 
+  
+  <!-- trainer start-->
+  <section class="trainer_sec" id="trainer">
+    <div class="container">
+      <div class="col-md-12">
+        <h2 class="title"><b>Our TRainers</b></h2>
+        <div class="carousel">
+          <div class="owl-carousel owl-theme ss_carousel" id="slider3">
+            <div class="col-md-12 col-sm-12 col-sx-10 item six circle1">
+              <div class="circle2"> 
+                <img src="assets/images/trainers.png" class="img-responsive topimg" alt="">
+              </div>
+              <div class="trainer_info">
+                <div class="info">
+                  <h4> JoHn Smith </h4>
+                  <h5> GYM Trainer </h5>
+                  <div class="trainer_social"> <a class="fa fa-facebook-f" href="#"></a> <a class="fa fa-twitter" href="#"></a> <a class="fa fa-instagram" href="#"></a> </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-sx-10 item six circle1">
+              <div class="circle2">
+                <img src="assets/images/trainers.png" class="img-responsive topimg" alt="">
+              </div>
+              <div class="trainer_info">
+                <div class="info">
+                  <h4> JoHn Smith </h4>
+                  <h5> GYM Trainer </h5>
+                  <div class="trainer_social"> <a class="fa fa-facebook-f" href="#"></a> <a class="fa fa-twitter" href="#"></a> <a class="fa fa-instagram" href="#"></a> </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-sx-10 item six circle1">
+              <div class="circle2"> 
+                <img src="assets/images/trainers.png" class="img-responsive topimg" alt="">
+              </div>
+              <div class="trainer_info">
+                <div class="info">
+                  <h4> JoHn Smith </h4>
+                  <h5> GYM Trainer </h5>
+                  <div class="trainer_social"> <a class="fa fa-facebook-f" href="#"></a> <a class="fa fa-twitter" href="#"></a> <a class="fa fa-instagram" href="#"></a> </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-sx-10 item six circle1">
+              <div class="circle2"> 
+                <img src="assets/images/trainers.png" class="img-responsive topimg" alt="">
+              </div>
+              <div class="trainer_info">
+                <div class="info">
+                  <h4> JoHn Smith </h4>
+                  <h5> GYM Trainer </h5>
+                  <div class="trainer_social"> <a class="fa fa-facebook-f" href="#"></a> <a class="fa fa-twitter" href="#"></a> <a class="fa fa-instagram" href="#"></a> </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-sx-10 item six circle1">
+              <div class="circle2"> 
+                <img src="assets/images/trainers.png" class="img-responsive topimg" alt="">
+              </div>
+              <div class="trainer_info">
+                <div class="info">
+                  <h4> JoHn Smith </h4>
+                  <h5> GYM Trainer </h5>
+                  <div class="trainer_social"> <a class="fa fa-facebook-f" href="#"></a> <a class="fa fa-twitter" href="#"></a> <a class="fa fa-instagram" href="#"></a> </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-sx-10 item six circle1">
+              <div class="circle2"> 
+                <img src="assets/images/trainers.png" class="img-responsive topimg" alt="">
+              </div>
+              <div class="trainer_info">
+                <div class="info">
+                  <h4> JoHn Smith </h4>
+                  <h5> GYM Trainer </h5>
+                  <div class="trainer_social"> <a class="fa fa-facebook-f" href="#"></a> <a class="fa fa-twitter" href="#"></a> <a class="fa fa-instagram" href="#"></a> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- trainer end--> 
+  
+  <!-- timetable start-->
+  <section class="timetable_sec" id="timetable">
+    <div class="container">
+      <div class="row">
+        <h2 class="title"><b> Our timetable</b></h2>
+        <!--Filters Nav-->
+        <ul class="filter-tabs clearfix anim-3-all day_tabs" id="filter-tabs">
+          <li class="filter active" data-filter=".Monday"  onclick="filterSelection('Monday')"><span class="btn-txt">Monday</span></li>
+          <li class="filter" data-filter=".tuesday" onclick="filterSelection('tuesday')"><span class="btn-txt">Tuesday</span></li>
+          <li class="filter" data-filter=".Wednesday" onclick="filterSelection('Wednesday')"><span class="btn-txt">Wednesday</span></li>
+          <li class="filter" data-filter=".Thursday" onclick="filterSelection('Thursday')"><span class="btn-txt">Thursday</span></li>
+          <li class="filter" data-filter=".Friday" onclick="filterSelection('Friday')"><span class="btn-txt">Friday</span></li>
+          <li class="filter" data-filter=".Saturday" onclick="filterSelection('Saturday')"><span class="btn-txt">Saturday</span></li>
+          <li class="filter" data-filter=".sunday" onclick="filterSelection('sunday')"><span class="btn-txt">Sunday</span></li>
+        </ul>
+        <select class="select filter-tabs clearfix select_day" onchange="filterSelection(this.value)">
+          <option  value="Monday">Monday</option>
+          <option  value="tuesday">Tuesday</option>
+          <option  value="Wednesday">Wednesday</option>
+          <option  value="Thursday">Thursday</option>
+          <option  value="Friday">Friday</option>
+          <option  value="Saturday">Saturday</option>
+          <option  value="sunday">Sunday</option>
+        </select>
+        
+        <!--Projects Container-->
+        <div class="projects-container filter-list">
+          <div class="row">
+            <article class="project-box wow col-md-3 col-sm-3 col-xs-6 hvr-rectangle-out">
+              <div class="Monday mix_all Saturday text-content"> 
+                <img class="img-responsive" src="assets/images/size.png" alt=""> 
+                <br>
+                <span class="time"> 06AM-08AM </span>
+                <h4> Weight Loose </h4>
+                <p> Rachel Adam </p>
+              </div>
+            </article>
+            <article class="project-box wow col-md-3 col-sm-3 col-xs-6 hvr-rectangle-out">
+              <div class="Monday mix_all Thursday sunday tuesday text-content"> 
+                <img class="img-responsive" src="assets/images/run.png" alt=""> 
+                <br>
+                <span class="time"> 08AM-10AM </span>
+                <h4> Cardio </h4>
+                <p> Rachel Adam </p>
+              </div>
+            </article>
+            <article class="project-box wow col-md-3 col-sm-3 col-xs-6 hvr-rectangle-out">
+              <div class="Monday mix_all Friday text-content"> 
+                <img class="img-responsive" src="assets/images/yoga.png" alt=""> 
+                <br>
+                <span class="time"> 10AM-01PM </span>
+                <h4> yoga </h4>
+                <p> Lefew D. Loee </p>
+              </div>
+            </article>
+            <article class="project-box wow col-md-3 col-sm-3 col-xs-6 hvr-rectangle-out right-line_hide">
+              <div class="text-content Monday mix_all  tuesday Wednesday sundays ">
+                <img class="img-responsive" src="assets/images/body.png" alt=""> 
+                <br>
+                <span class="time"> 01PM-02PM </span>
+                <h4> Fitness </h4>
+                <p> Rachel Adam </p>
+              </div>
+            </article>
+            <article class="project-box wow col-md-3 col-sm-3 col-xs-6 hvr-rectangle-out bottomrow">
+              <div class=" Monday mix_all  tuesday text-content"> 
+                <img class="img-responsive" src="assets/images/box.png" alt=""> 
+                <br>
+                <span class="time"> 04PM-06PM </span>
+                <h4> Karate </h4>
+                <p> Keaf Shen </p>
+              </div>
+            </article>
+            <article class="project-box wow col-md-3 col-sm-3 col-xs-6 hvr-rectangle-out bottomrow">
+              <div class=" Monday mix_all Thursday Saturday Friday tuesday text-content"> 
+                <img class="img-responsive" src="assets/images/boxing-gloves.png" alt=""> <br>
+                <span class="time"> 06PM-07PM </span>
+                <h4> Boxing </h4>
+                <p> Rachel Adam </p>
+              </div>
+            </article>
+            <article class="project-box wow col-md-3 col-sm-3 col-xs-6 hvr-rectangle-out bottomrow">
+              <div class="Monday mix_all Thursday Saturday sundays text-content"> 
+                <img class="img-responsive" src="assets/images/rope.png" alt=""> 
+                <br>
+                <span class="time"> 07PM-08PM </span>
+                <h4> Aerobics & Skipping </h4>
+                <p> Lefew D. Loee </p>
+              </div>
+            </article>
+            <article class="project-box wow col-md-3 col-sm-3 col-xs-6 hvr-rectangle-out right-line_hide bottomrow">
+              <div class="Monday mix_all Saturday Friday Wednesday tuesday sundays text-content"> 
+                <img class="img-responsive" src="assets/images/biceps.png" alt="">
+                <br>
+                <span class="time"> 08PM-09PM </span>
+                <h4>Body Building </h4>
+                <p> Rachel Adam </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- timetable end--> 
+  
+  <!-- video start-->
+  <section class="video_sec">
+    <div class="container-fluid">
+      <div class="row wow zoomIn animated" data-wow-delay="0ms" data-wow-duration="1000ms"> 
+        <a class="video-link" href="https://www.youtube.com/embed/AulGwjIv3m8" data-width="550" data-height="350"> 
+          <img src="assets/images/play.png" alt=""> 
+        </a>
+        <h2>Explore Fitness Complex </h2>
+        <h2 class="orange_text">
+          <a class="video-link" href="https://www.youtube.com/embed/AulGwjIv3m8" data-width="550" data-height="350">Watch now</a>
+        </h2>
+      </div>
+    </div>
+  </section>
+  <!-- video end--> 
+  
+  <!-- blog start-->
+  <section class="blog_sec" id="blog">
+    <div class="container">
+      <div class="row">
+        <h2 class="title"><b>Our blog</b></h2>
+        <div class="carousel">
+          <div class="owl-carousel owl-theme ss_carousel col-md-12 col-xs-12 col-sm-12" id="slider2">
+            <div class="card">
+              <div class="b_date">
+                <img class="img-responsive" src="assets/images/blog_date.png" alt=""> 
+                <span>June<br>09</span>
+              </div>
+              <div class="blog_img">
+                <a href="blog_detail.html"> 
+                  <img class="img-responsive" src="assets/images/blog.png" alt="">
+                </a>
+              </div>
+              <div class="blog_info">
+                <h4>
+                  <a href="blog_detail.html">Lorem ipsum dolor sit amet</a>
+                </h4>
+                <p>consectetur adipiscing elit. Mauris et luctus lorem, efficitur placerat sem. </p>
+                <!-- <a href="#" class="blog_read">Read More  <i class="fa fa-arrow-right"> </i></a> --> 
+              </div>
+            </div>
+            <div class="card">
+              <div class="b_date">
+                <img class="img-responsive" src="assets/images/blog_date.png" alt="">
+                <span>June<br>10</span>
+              </div>
+              <div class="blog_img">
+                <a href="blog_detail.html">
+                  <img class="img-responsive" src="assets/images/blog.png" alt="">
+                </a>
+              </div>
+              <div class="blog_info">
+                <h4>
+                  <a href="blog_detail.html">Lorem ipsum dolor sit amet</a>
+                </h4>
+                <p>consectetur adipiscing elit. Mauris et luctus lorem, efficitur placerat sem. </p>
+                <!-- <a href="#" class="blog_read"> Read More  <i class="fa fa-arrow-right"> </i></a> --> 
+              </div>
+            </div>
+            <div class="card">
+              <div class="b_date">
+                <img class="img-responsive" src="assets/images/blog_date.png" alt=""> 
+                <span>June<br>20</span> 
+              </div>
+              <div class="blog_img">
+                <a href="blog_detail.html">
+                  <img class="img-responsive" src="assets/images/blog.png" alt="">
+                </a>
+              </div>
+              <div class="blog_info">
+                <h4>
+                  <a href="blog_detail.html">Lorem ipsum dolor sit amet</a>
+                </h4>
+                <p>consectetur adipiscing elit. Mauris et luctus lorem, efficitur placerat sem. </p>
+                <!--  <a href="#" class="blog_read">Read More  <i class="fa fa-arrow-right"> </i></a> --> 
+              </div>
+            </div>
+            <div class="card">
+              <div class="b_date">
+                <img class="img-responsive" src="assets/images/blog_date.png" alt=""> 
+                <span>June<br> 09</span>
+              </div>
+              <div class="blog_img">
+                <a href="blog_detail.html">
+                  <img class="img-responsive" src="assets/images/blog.png" alt="">
+                </a>
+              </div>
+              <div class="blog_info">
+                <h4>
+                  <a href="blog_detail.html">Lorem ipsum dolor sit amet</a>
+                </h4>
+                <p>consectetur adipiscing elit. Mauris et luctus lorem, efficitur placerat sem. </p>
+                <!-- <a href="#" class="blog_read">Read More  <i class="fa fa-arrow-right"> </i></a> --> 
+              </div>
+            </div>
+            <div class="card">
+              <div class="b_date"> 
+                <img class="img-responsive" src="assets/images/blog_date.png" alt=""> 
+                <span>June<br> 10</span> 
+              </div>
+              <div class="blog_img">
+                <a href="blog_detail.html">
+                  <img class="img-responsive" src="assets/images/blog.png" alt="">
+                </a>
+              </div>
+              <div class="blog_info">
+                <h4>
+                  <a href="blog_detail.html">Lorem ipsum dolor sit amet</a>
+                </h4>
+                <p>consectetur adipiscing elit. Mauris et luctus lorem, efficitur placerat sem. </p>
+                <!-- <a href="#" class="blog_read"> Read More  <i class="fa fa-arrow-right"> </i></a> --> 
+              </div>
+            </div>
+            <div class="card">
+              <div class="b_date">
+                <img class="img-responsive" src="assets/images/blog_date.png" alt="">
+                <span>June<br> 20</span>
+              </div>
+              <div class="blog_img">
+                <img class="img-responsive" src="assets/images/blog.png" alt=""> 
+              </div>
+              <div class="blog_info">
+                <h4>Lorem ipsum dolor sit amet</h4>
+                <p>consectetur adipiscing elit. Mauris et luctus lorem, efficitur placerat sem. </p>
+                <!--  <a href="#" class="blog_read">Read More  <i class="fa fa-arrow-right"> </i></a> --> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- blog end--> 
+  
+  <!-- Contact_from start-->
+  <section id="contact" class="home_contact_sec">
+    <div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6 right">
+            <div class="right_form">
+              <h2>Get In touch</h2>
+              <form id="contactForm" class="site-contact-form">
+                <div class="col-lg-12 col-sm-12">
+                  <div class="row">
+                    <input type="text" name="contact_name" placeholder="Name" required>
+                  </div>
+                </div>
+                <div class="col-lg-12 col-sm-12">
+                  <div class="row">
+                    <input type="email" name="contact_email" placeholder="Email" required>
+                  </div>
+                </div>
+                <div class="col-lg-12 col-sm-12">
+                  <div class="row">
+                    <textarea name="contact_message" rows="3" placeholder="Message" required></textarea>
+                  </div>
+                </div>
+                <div class="clearfix"> </div>
+                <button type="submit" class="primary-btn"> SEND MESSAGE </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact_from end--> 
+  
+  <!-- footer start-->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-widget-area clearfix">
+        <div class="footer-widget about-widget col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-delay="0ms" data-wow-duration="1000ms"> <a href="#">
+            <h2 class="logo_name">
+              GYM <span class="white_text">FIT </span> 
+            </h2>
+          </a>
+          <div class="widget-about">
+            <p>ligula sed porta cursus, lectus ligula interdum tortor, vitae tempor leo eros lobortis ante. Integer semper, metus in tincidunt euismod.</p>
+            <div class="social">
+              <a class="fa fa-facebook-f" href="#"></a> 
+              <a class="fa fa-twitter" href="#"></a>
+              <a class="fa fa-instagram" href="#"></a> 
+              <a class="fa fa-google-plus" href="#"></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-widget quick-links col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1000ms">
+          <h4>LINKS</h4>
+          <div class="widget-link">
+            <ul>
+              <li>
+                <a href="index.html" class="ToTop">Home</a> 
+              </li>
+              <li> 
+                <a href="about.html">About Us</a> 
+              </li>
+              <li> 
+                <a href="classes.html">Coueses</a>
+              </li>
+              <li>
+                <a href="shedule.html">Schedule</a>
+              </li>
+              <li>
+                <a href="blogpage.html">Blog</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-widget latest-work col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1000ms">
+          <h4>Instagram</h4>
+          <div class="widget-post">
+            <div class="clearfix">
+              <figure class="image">
+                <a href="#">
+                  <img src="assets/images/instagram.png" alt="">
+                </a>
+              </figure>
+              <figure class="image">
+                <a href="#">
+                  <img src="assets/images/instagram.png" alt="">
+                </a>
+              </figure>
+              <figure class="image">
+                <a href="#">
+                  <img src="assets/images/instagram.png" alt="">
+                </a>
+              </figure>
+              <figure class="image">
+                <a href="#">
+                  <img src="assets/images/instagram.png" alt="">
+                </a>
+              </figure>
+              <figure class="image">
+                <a href="#">
+                  <img src="assets/images/instagram.png" alt="">
+                </a>
+              </figure>
+              <figure class="image">
+                <a href="#">
+                  <img src="assets/images/instagram.png" alt="">
+                </a>
+              </figure>
+              <figure class="image">
+                <a href="#">
+                  <img src="assets/images/instagram.png" alt="">
+                </a>
+              </figure>
+              <figure class="image">
+                <a href="#">
+                  <img src="assets/images/instagram.png" alt="">
+                </a>
+              </figure>
+              <figure class="image">
+                <a href="#">
+                  <img src="assets/images/instagram.png" alt="">
+                </a>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="footer-widget address col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-delay="900ms" data-wow-duration="1000ms">
+          <h4>Contact us</h4>
+          <div class="widget-content">
+            <div class="address_box col-sm-12"> 
+              <i class="fa fa-phone col-sm-1"></i>
+              <p class="col-sm-10">123-1234-123</p>
+            </div>
+            <br>
+            <div class="address_box col-sm-12">
+              <i class="fa fa-envelope col-sm-1"></i>
+              <p class="col-sm-10">Fitness@yourdomain.com</p>
+            </div>
+            <br>
+            <div class="address_box1 col-sm-12"> 
+              <i class="fa fa-map-marker col-sm-1"></i>
+              <p class="col-sm-10">1011Santa Monica <br>
+                boulevard Los Angeles</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="auto-container text-center">
+        © 2018 <a href="#">GYMFIT.</a> With All rights reserved.
+      </div>
+    </div>
+  </footer>
+  <!-- footer end--> 
+  
+</div>
+<a href="#" class="scrollToTop"><i class="fa fa-arrow-up" aria-hidden="true"></i></a> 
+
+<!-- jQuery --> 
+<script src="assets/js/jquery.min.js"></script> 
+
+<!-- Bootstrap --> 
+<script src="assets/js/bootstrap.min.js"></script> 
+
+<!-- carousel slider --> 
+<script src="assets/js/owl.carousel.js"></script> 
+
+<!-- cdn Link --> 
+<script src="assets/js/TweenMax.min.js"></script> 
+
+<!-- Scroll Plugin --> 
+<script src="assets/js/ScrollToPlugin.min.js"></script> 
+
+<!-- wow --> 
+<script src="assets/js/wow.min.js"></script> 
+
+<!-- Progressbar --> 
+<script src="assets/js/progressbar.js"></script> 
+
+<!-- Global Init --> 
+<script src="assets/js/custom.js"></script> 
+
+</body>
+</html>

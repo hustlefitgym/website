@@ -1,0 +1,26 @@
+.hustlefit-container {
+	display: flex;
+	align-items: center;
+}
+
+.owner-image {
+ width: 320px;
+ height:auto;
+}
+
+.hustlefit-img {
+	vertical-align: middle
+}
+
+.logotext {
+	margin-left: 12px;
+}
+
+.background-gym {
+	height: 120vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: no-repeat;
+    background-image: url(../images/gym-background.jpeg);
+}

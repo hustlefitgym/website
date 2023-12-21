@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Free Web tutorials">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GymFit-Trainers</title>
+<!-- <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" /> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800,900,1200" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/jquery.bxslider.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+<link rel="stylesheet" href="assets/css/owl.carousel.css">
+<link rel="stylesheet" href="assets/css/owl.theme.default.css">
+</head>
+<body>
+<div class="page-wrapper blogpage2"> 
+  <!-- Preloader -->
+  <div class="preloader"></div>
+  <!-- Preloader -->
+  
+  <!-- Header Start -->
+   <header class="main-header header-fixed jj_position_absolute">
+    <div class="header-lower">
+      <div class="container clearfix"> 
+        <div class="logo pull-left">
+          <a href="index.html"><h2 class="logo_name">GYM <span class="white_text">FIT </span> </h2></a>
+        </div>
+        <div class="right-cont clearfix"> 
+          <nav class="main-menu">
+            <div class="navbar-header"> 
+              <button type="button" class="navbar-toggle menu_btn" > <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            </div>
+            <div class="navbar-collapse collapse clearfix animated" data-wow-delay="0ms" data-wow-duration="800ms">
+              <ul class="nav navbar-nav navbar-right  ml-auto" id="onenav">
+                <li class="nav-link home current"><a href="index.html" class="ToTop js-scroll-trigger">HOME</a> </li>
+                <li class="nav-link"><a href="about.html" class="js-scroll-trigger">ABOUT US</a> </li>
+                <li class="nav-link"><a href="classes.html" class="js-scroll-trigger">COURSES</a></li>
+                <li class="nav-link"><a href="shedule.html" class="js-scroll-trigger">SCHEDULE</a></li>
+                <li class="nav-link"><a href="blogpage.html" class="js-scroll-trigger">BLOG</a></li>
+                <li class="nav-link"><a href="contact.html" class="js-scroll-trigger">CONTACT US</a></li>
+                <li class="search-btn" onclick="openSearch()"><a><i class="fa fa-search"></i></a></li>
+              </ul>
+              <div class="clearfix"></div>
+            </div>
+          </nav>
+        </div>
+        <div id="myOverlay" class="overlay zoomIn animated" data-wow-delay="0ms" data-wow-duration="1000ms"> <span class="closebtn" onclick="closeSearch()" title="Close Overlay"> x </span>
+          <div class="overlay-content">
+            <form>
+              <input type="text" placeholder="Enter your keywords..." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header end --> 
+  
+  <!-- Error start -->
+  <main class="content1">
+    <div class="error_con"> <img class="img-responsive" src="assets/images/error_icon.png" alt="">
+      <div class="back_home"> <a href="index.html" class="back_to_home">Back to Homepage</a> </div>
+    </div>
+  </main>
+  <div class="error_copy">
+    <p>© 2018 <span class="color"> FITNESS COMPLEX</span> . All Rights Reserved</p>
+  </div>
+  <!-- Error end -->
+</div>
+<a href="#" class="scrollToTop"><i class="fa fa-arrow-up" aria-hidden="true"></i></a> 
+<!-- jQuery --> 
+<script src="assets/js/jquery.min.js"></script> 
+
+<!-- Bootstrap --> 
+<script src="assets/js/bootstrap.min.js"></script> 
+
+<!-- carousel slider --> 
+<script src="assets/js/owl.carousel.js"></script> 
+
+<!-- cdn Link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script> 
+
+<!-- Scroll Plugin --> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+ 
+<!-- Global Init --> 
+<script src="assets/js/custom.js"></script> 
+
+<script>
+	function openSearch() {
+		document.getElementById("myOverlay").style.display = "block";
+	}
+
+	function closeSearch() {
+		document.getElementById("myOverlay").style.display = "none";
+	}
+</script>
+</body>
+</html>
